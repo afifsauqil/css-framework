@@ -11,6 +11,12 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- LC Lightbox -->
+    <link rel="stylesheet" href="css/lc_lightbox.min.css" />
+
+    <!-- Skin dark for lightbox -->
+    <link rel="stylesheet" href="skins/dark.css" />
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
@@ -144,32 +150,32 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <a href="#">
+            <a class="mybox" title="LKS Jatim 29" data-lcl-txt="Lomba LKS bidang Cloud Computing di SMKN 11 Malang" href="thumbs/3.jpg">
               <img src="thumbs/3.jpg" alt="Gambar 2" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#">
+            <a class="mybox" title="LKS Wilker 1" data-lcl-txt="Lolos seleksi LKS Bidang Cloud Computing dari beberapa kota ke provinsi" href="thumbs/2.jpg">
               <img src="thumbs/2.jpg" alt="Gambar 3" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#">
+            <a class="mybox" title="LK2P" data-lcl-txt="Juara Umum Pramuka Tingkat Jawa Timur" href="thumbs/7.jpg">
               <img src="thumbs/7.jpg" alt="Gambar 6" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#">
+            <a class="mybox" title="Pengenalan Kegiatan Pramuka SMKN 2 Surabaya" data-lcl-txt="Sambutan Pramuka untuk Pandu dari Brunei Darusssalam" href="thumbs/9.jpeg">
               <img src="thumbs/9.jpeg" alt="Gambar 5" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#">
+            <a class="mybox" title="Sertijab" data-lcl-txt="Pertama kali sertijab di tingkat penegak" href="thumbs/10.jpeg">
               <img src="thumbs/10.jpeg" alt="Gambar 5" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#">
+            <a class="mybox" title="LKS Jatim 29" data-lcl-txt="Foto Bersama antar peserta LKS bidang cloud" href="thumbs/8.jpg">
               <img src="thumbs/8.jpg" alt="Gambar 4" class="img-fluid gallery-img" />
             </a>
           </div>
@@ -233,7 +239,19 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="lib/AlloyFinger/alloy_finger.min.js"></script>
+    <script src="js/lc_lightbox.lite.min.js"></script>
+    <script>
+      lc_lightbox(".mybox", {
+        wrap_class: "lcl_fade_oc",
+        gallery: true,
+        skin: "dark",
+        counter: true,
+        fullscreen: true,
+        download: true,
+      });
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       const galleryImage = document.querySelectorAll(".gallery-img");
